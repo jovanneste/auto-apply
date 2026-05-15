@@ -9,7 +9,6 @@ SCREENSHOTS_DIR = UPLOADS_DIR / "screenshots"
 
 
 class Settings(BaseSettings):
-    anthropic_api_key: str = ""
     db_url: str = f"sqlite:///{DATA_DIR}/app.db"
 
     model_config = {"env_file": ".env"}
